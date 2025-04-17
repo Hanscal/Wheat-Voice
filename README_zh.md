@@ -18,10 +18,10 @@
    	<a href="https://github.com/Hanscal/Wheat-Voice/stargazers">
        <img alt="stars" src="https://img.shields.io/github/stars/Hanscal/Wheat-Voice" />
   	</a>
-  	<a href="https://github.com/MLNLP-World/AI-Paper-collector/network/members">
+  	<a href="https://github.com/Hanscal/Wheat-Voice/network/members">
        <img alt="fork" src="https://img.shields.io/github/forks/Hanscal/Wheat-Voice?color=FF8000" />
   	</a>
-    <a href="https://github.com/MLNLP-World/AI-Paper-collector/issues">
+    <a href="https://github.com/Hanscal/Wheat-Voice/issues">
       <img alt="问题反馈" src="https://img.shields.io/github/issues/Hanscal/Wheat-Voice?color=0088ff"/>
     </a>
     <br />
