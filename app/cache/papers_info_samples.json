@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "paper_id": "27749@AAAI",
+    "title": "A Multi-Modal Contrastive Diffusion Model for Therapeutic Peptide Generation",
+    "file_name": "A Multi-Modal Contrastive Diffusion Model for Therapeutic Peptide Generation.pdf",
+    "summary": "Therapeutic peptides represent a unique class of pharmaceutical agents crucial for the treatment of human diseases. Recently, deep generative models have exhibited remarkable potential for generating therapeutic peptides, but they only utilize sequence or structure information alone, which hinders the performance in generation. In this study, we propose a Multi-Modal Contrastive Diffusion model (MMCD), fusing both sequence and structure modalities in a diffusion framework to co-generate novel peptide sequences and structures. Specifically, MMCD constructs the sequence-modal and structure-modal diffusion models, respectively, and devises a multi-modal contrastive learning strategy with inter-contrastive and intra-contrastive in each diffusion timestep, aiming to capture the consistency between two modalities and boost model performance. The inter-contrastive aligns sequences and structures of peptides by maximizing the agreement of their embeddings, while the intra-contrastive differentiates therapeutic and non-therapeutic peptides by maximizing the disagreement of their sequence/structure embeddings simultaneously. The extensive experiments demonstrate that MMCD performs better than other state-of-the-art deep generative methods in generating therapeutic peptides across various metrics, including antimicrobial/anticancer score, diversity, and peptide-docking.",
+    "authors": "Yongkang Wang,Xuan Liu,Feng Huang,Zhankun Xiong,Wen Zhang",
+    "keywords": "therapeutic,peptides,contrastive,mmcd,peptide,modal,diffusion,sequence,structure,maximizing",
+    "conference_column": "AAAI.2024 - Application Domains",
+    "conference_name": "AAAI",
+    "conference_year": "2024",
+    "conference_group": "Application Domains",
+    "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/view/27749/27541",
+    "kimi_link": "https://papers.cool/venue/kimi?paper=27749@AAAI",
+    "number_tag": "50",
+    "paper_cool_link": "https://papers.cool/venue/AAAI.2024?group=Application%20Domains",
+    "unique_paper": "27749@AAAI--2024",
+    "faq_5": "Q: 总结一下论文的主要内容#A: 这篇论文的主要内容可以总结如下：\n\n1. **问题定义**：论文旨在解决如何有效生成具有治疗性的肽序列和结构的问题，特别是在有限的数据集情况下如何提高生成模型的性能和泛化能力。\n\n2. **方法提出**：提出了一个名为多模态对比扩散模型（MMCD）的新方法，该方法融合了序列和结构两种模态的信息，并通过对比学习策略来增强模型性能。\n\n3. **模型设计**：\n   - **序列和结构模态**：构建了分别针对序列和结构的扩散模型。\n   - **对比学习策略**：设计了内部对比学习（Intra-CL）和互模态对比学习（Inter-CL）策略，以对齐多模态信息并区分治疗性和非治疗性肽。\n   - **扩散过程**：详细定义了肽序列和结构的扩散过程，包括前向扩散（添加噪声）和反向生成（去噪）。\n\n4. **实验验证**：\n   - **数据集**：使用了包含AMP和ACP的治疗性肽数据集。\n   - **基线比较**：与其他先进的生成方法进行了比较。\n   - **性能评估**：使用多个指标对生成的肽进行了评估，包括相似性、不稳定性、治疗性评分、结构评分和对接评分。\n   - **消融研究**：通过消融实验验证了对比学习策略的重要性。\n\n5. **结果**：实验结果表明MMCD在生成治疗性肽方面超越了其他基线方法，特别是在抗菌/抗癌评分、多样性和肽对接方面。\n\n6. **潜在研究方向**：论文还提出了一些可能的研究方向，包括使用更大和更多样化的数据集、提高模型的可解释性、与其他生物分子整合以及提高计算效率等。\n\n总体而言，这篇论文通过引入多模态信息和对比学习策略，为治疗性肽的生成提供了一个有效的新方法，并在实验中证明了其优越性。"
+  },
+  {
+    "id": 2,
+    "paper_id": "27750@AAAI",
+    "title": "Towards Automated RISC-V Microarchitecture Design with Reinforcement Learning",
+    "file_name": "Towards Automated RISC-V Microarchitecture Design with Reinforcement Learning.pdf",
+    "summary": "Microarchitecture determines the implementation of a microprocessor. Designing a microarchitecture to achieve better performance, power, and area (PPA) trade-off has been increasingly difficult. Previous data-driven methodologies hold inappropriate assumptions and lack more tightly coupling with expert knowledge. This paper proposes a novel reinforcement learning-based (RL) solution that addresses these limitations. With the integration of microarchitecture scaling graph, PPA preference space embedding, and proposed lightweight environment in RL, experiments using commercial electronic design automation (EDA) tools show that our method achieves an average PPA trade-off improvement of 16.03% than previous state-of-the-art approaches with 4.07× higher efficiency. The solution qualities outperform human implementations by at most 2.03× in the PPA trade-off.",
+    "authors": "Chen Bai,Jianwang Zhai,Yuzhe Ma,Bei Yu,Martin D. F. Wong",
+    "keywords": "microarchitecture,ppa,trade,risc,microprocessor,reinforcement,eda,design,inappropriate,qualities",
+    "conference_column": "AAAI.2024 - Application Domains",
+    "conference_name": "AAAI",
+    "conference_year": "2024",
+    "conference_group": "Application Domains",
+    "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/view/27750/27543",
+    "kimi_link": "https://papers.cool/venue/kimi?paper=27750@AAAI",
+    "number_tag": "50",
+    "paper_cool_link": "https://papers.cool/venue/AAAI.2024?group=Application%20Domains",
+    "unique_paper": "27750@AAAI--2024",
+    "faq_5": "Q: 总结一下论文的主要内容#A: 这篇论文主要内容的总结如下：\n\n1. **问题定义**:\n   - 论文旨在解决自动化RISC-V微架构设计的问题，以实现更好的性能、功耗和面积（PPA）权衡。\n\n2. **研究背景**:\n   - 介绍了RISC-V指令集架构的重要性，并讨论了微架构设计在实现微处理器设计中的关键作用。\n   - 分析了现有的数据驱动方法和基于专家知识的方法的局限性。\n\n3. **方法论**:\n   - 提出了一种基于强化学习（RL）的新方法，该方法通过整合微架构缩放图、PPA偏好空间嵌入和轻量级环境来自动化RISC-V微架构设计。\n   - 描述了微架构缩放图的概念，以及如何将其与RL结合来指导设计决策。\n   - 引入了动态加权奖励机制，允许代理根据PPA偏好在线探索不同的设计配置。\n\n4. **实验设计**:\n   - 使用商业EDA工具在7nm技术节点上对提出的RL方法进行了实验验证。\n   - 与现有的最先进方法和人类设计努力进行了比较，以评估提出方法的有效性。\n\n5. **实验结果**:\n   - 实验结果表明，提出的方法在PPA权衡上平均比先前最先进的方法提高了16.03%，并且在效率上提高了4.07倍。\n   - 展示了轻量级PPA模型的准确性，并通过多个工作负载分析了方法的性能。\n\n6. **未来工作**:\n   - 论文指出了进一步研究的方向，包括算法改进、设计空间扩展、多目标优化的深入研究、模型泛化能力、实际部署和应用、与其他AI技术的结合、安全性和可靠性、以及用户交互和定制等方面。\n\n总体而言，这篇论文提出了一个创新的RL框架，用于自动化RISC-V微架构设计，并展示了其在提高设计质量和效率方面的潜力。"
+  }
+  ]

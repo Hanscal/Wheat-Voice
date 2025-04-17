@@ -1,0 +1,23 @@
+FROM python:3.9
+
+# 定义 元数据
+LABEL maintainer="hanscal" version="1.0"
+
+# 设置/切换 当前工作目录 为 /code
+RUN mkdir -p /root/app
+WORKDIR /root/app
+
+# 将构建环境下的依赖文件 requirements.txt 复制到镜像的当前工作目录中
+COPY requirements.txt .
+
+# 指定 一个OR多个 卷, 挂载到镜像 (配合后续docker cp使用)
+VOLUME ["/root/app"]
+
+# 安装python环境支持(针对python项目)
+RUN pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+# 暴露出外界访问容器的端口
+EXPOSE 5001
+
+# 预留CMD 命令，可以被 docker run命令覆盖
+# CMD ["python", "run_wheatvoice.py"]

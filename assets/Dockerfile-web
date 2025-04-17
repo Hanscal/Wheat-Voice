@@ -1,0 +1,26 @@
+FROM node:22.8.0
+
+RUN mkdir -p /root/web-vue
+WORKDIR /root/web-vue
+
+COPY package*.json ./
+# 设置环境变量以提高网络请求的稳定性
+ENV NPM_CONFIG_REGISTRY=https://registry.npm.taobao.org
+ENV NPM_CONFIG_RETRIES=5
+ENV NPM_CONFIG_RETRY_DELAY=2000
+
+USER root
+# 通过npm下载cnpm
+RUN npm install -g cnpm --registry=https://registry.npmmirror.com
+
+# 使用cnpm进行安装依赖，并增加错误处理逻辑
+#RUN cnpm install || (echo "cnpm install failed, falling back to npm install" && npm install)
+RUN npm install
+
+# 指定 一个OR多个 卷, 挂载到镜像 (配合后续docker cp使用)
+VOLUME ["/web-vue"]
+
+EXPOSE 8080
+
+# 运行开发命令
+# CMD ["npm", "run", "dev"]
