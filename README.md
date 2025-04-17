@@ -13,10 +13,10 @@
     <img alt="status" src="https://img.shields.io/badge/Status-building-blue" />
   </a>
   <a href="https://github.com/Hanscal/Wheat-Voice/commits/main">
-    <img alt="commit" src="https://img.shields.io/github/last-commit/Hanscal/Wheat-Voice?color=FF8000" />
+    <img alt="commit" src="https://img.shields.io/github/last-commit/Hanscal/Wheat-Voice" />
   </a>
   <a href="https://github.com/Hanscal/Wheat-Voice/graphs/contributors">
-    <img alt="contributors" src="https://img.shields.io/github/contributors/Hanscal/Wheat-Voice?color=FF8000" />
+    <img alt="contributors" src="https://img.shields.io/github/contributors/Hanscal/Wheat-Voice" />
   </a>
   <a href="https://github.com/Hanscal/Wheat-Voice/pulls">
     <img alt="PRs" src="https://img.shields.io/badge/PRs-Welcome-red" />
