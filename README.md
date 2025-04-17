@@ -10,19 +10,19 @@
       <img alt="version" src="https://img.shields.io/badge/version-v1.0-blue?color=FF8000?color=009922" />
     </a>
   <a >
-       <img alt="Status-building" src="https://img.shields.io/badge/Status-building-blue" />
+       <img alt="status" src="https://img.shields.io/badge/Status-building-blue" />
   	</a>
   <a >
-       <img alt="PRs-Welcome" src="https://img.shields.io/badge/PRs-Welcome-red" />
+       <img alt="PRs" src="https://img.shields.io/badge/PRs-Welcome-red" />
   	</a>
    	<a href="https://github.com/Hanscal/Wheat-Voice/stargazers">
        <img alt="stars" src="https://img.shields.io/github/stars/Hanscal/Wheat-Voice" />
   	</a>
   	<a href="https://github.com/MLNLP-World/AI-Paper-collector/network/members">
-       <img alt="FORK" src="https://img.shields.io/github/forks/Hanscal/Wheat-Voice?color=FF8000" />
+       <img alt="fork" src="https://img.shields.io/github/forks/Hanscal/Wheat-Voice?color=FF8000" />
   	</a>
     <a href="https://github.com/MLNLP-World/AI-Paper-collector/issues">
-      <img alt="Issues" src="https://img.shields.io/github/issues/Hanscal/Wheat-Voice?color=0088ff"/>
+      <img alt="issues" src="https://img.shields.io/github/issues/Hanscal/Wheat-Voice?color=0088ff"/>
     </a>
     <br />
 </p>
@@ -35,8 +35,8 @@ Try Wheat Voice today and let your research workflow breathe. Got feedback or wa
 
 \[ English | [中文](README_zh.md) \]
 
-[![](./assets/web-demo.jpg)](./assets/web-demo-v1.mp4)
-
+[//]: # ([![]&#40;./assets/web-demo.jpg&#41;]&#40;./assets/web-demo-v1.mp4&#41;)
+https://github.com/user-attachments/assets/29a8abb2-4181-4abb-9076-9b57c3d6b312
 ---
 
 ### 🚀 Key Features

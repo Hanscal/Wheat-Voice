@@ -33,7 +33,8 @@
 
 立即试用 Wheat Voice，让你的科研流程更加轻松。如果你有建议或想参与贡献，欢迎提交 Issue 或 PR！
 
-[![](./assets/web-demo.jpg)](./assets/web-demo-v1.mp4)
+[//]: # ([![]&#40;./assets/web-demo.jpg&#41;]&#40;./assets/web-demo-v1.mp4&#41;)
+https://github.com/user-attachments/assets/29a8abb2-4181-4abb-9076-9b57c3d6b312
 
 ---
 
