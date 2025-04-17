@@ -5,7 +5,7 @@
 <h2 align="center">Smart and Lightweight Paper Discovery for AI Researchers</h2>
 </p
 
-<p align="center">
+<div align="center">
   <a href="https://img.shields.io/badge/version-v1.0-blue">
     <img alt="version" src="https://img.shields.io/badge/version-v1.0-blue?color=FF8000" />
   </a>
@@ -24,8 +24,7 @@
   <a href="https://github.com/Hanscal/Wheat-Voice/issues">
     <img alt="issues" src="https://img.shields.io/github/issues/Hanscal/Wheat-Voice?color=0088ff"/>
   </a>
-  <br />
-</p>
+</div>
 
 ---
 
