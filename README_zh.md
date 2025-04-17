@@ -9,10 +9,10 @@
   	<a href="https://img.shields.io/badge/version-v1.0-blue">
       <img alt="版本" src="https://img.shields.io/badge/version-v1.0-blue?color=FF8000?color=009922" />
     </a>
-  <a >
+  <a href="https://img.shields.io/badge/Status-building-blue">
        <img alt="状态-构建中" src="https://img.shields.io/badge/Status-building-blue" />
   	</a>
-  <a >
+  <a href="https://github.com/Hanscal/Wheat-Voice/pulls">
        <img alt="欢迎PR" src="https://img.shields.io/badge/PRs-Welcome-red" />
   	</a>
    	<a href="https://github.com/Hanscal/Wheat-Voice/stargazers">
