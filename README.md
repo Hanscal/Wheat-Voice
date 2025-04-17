@@ -12,19 +12,11 @@
   </a>
 
   <a>
-    <img alt="status" src="https://img.shields.io/badge/Status-building-blue" />
-  </a>
-
-  <a>
     <img alt="PRs" src="https://img.shields.io/badge/PRs-Welcome-red" />
   </a>
 
   <a href="https://github.com/Hanscal/Wheat-Voice/stargazers">
     <img alt="stars" src="https://img.shields.io/github/stars/Hanscal/Wheat-Voice" />
-  </a>
-
-  <a href="https://github.com/Hanscal/Wheat-Voice/network/members">
-    <img alt="fork" src="https://img.shields.io/github/forks/Hanscal/Wheat-Voice?color=FF8000" />
   </a>
 
   <a href="https://github.com/Hanscal/Wheat-Voice/issues">
