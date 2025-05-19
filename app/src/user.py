@@ -4,6 +4,8 @@
 @author: hanscal
 @date: 2024/10/1 15:11
 """
+import urllib
+import urllib.request
 import hashlib
 import json
 import random
@@ -30,6 +32,7 @@ from alibabacloud_tea_util import models as util_models
 from alibabacloud_tea_util.client import Client as UtilClient
 
 from conf.config import ALIBABA_CLOUD_ACCESS_KEY_ID, ALIBABA_CLOUD_ACCESS_KEY_SECRET
+from conf.config import DUANXINBAO_USER, DUANXINBAO_ACCESS_KEY_SECRET
 
 # 连接数据库
 from src.db_operation import DbOperation
@@ -116,6 +119,60 @@ class Sample(object):
             # 诊断地址
             print(error.data.get("Recommend"))
             UtilClient.assert_as_string(error.message)
+# 短信平台,短信宝
+class Sample_DXB(object):
+    def __init__(self, sign_name='行麦科技', template_code='SMS_474230089'):
+        self.sign_name = sign_name
+
+    def main(self,
+        phone_numbers: str,
+        verification_code: str,
+        ) -> None:
+        def md5(str):
+            m = hashlib.md5()
+            m.update(str.encode("utf8"))
+            return m.hexdigest()
+
+        statusStr = {
+            '0': '短信发送成功',
+            '-1': '参数不全',
+            '-2': '服务器空间不支持,请确认支持curl或者fsocket,联系您的空间商解决或者更换空间',
+            '30': '密码错误',
+            '40': '账号不存在',
+            '41': '余额不足',
+            '42': '账户已过期',
+            '43': 'IP地址限制',
+            '50': '内容含有敏感词'
+        }
+
+        smsapi = "http://api.smsbao.com/"
+        # 短信平台账号
+        user = os.environ.get('DUANXINBAO_USER',DUANXINBAO_USER)
+        # 短信平台密码
+        password = md5(os.environ.get('DUANXINBAO_ACCESS_KEY_SECRET',DUANXINBAO_ACCESS_KEY_SECRET))
+        code = verification_code
+        # 要发送的短信内容
+        content = f'您的验证码是{code}。有效期为5分钟，请尽快验证！【行麦科技】'
+        # 要发送短信的手机号码
+        phone = phone_numbers
+        res = {'Message': '', "ReceiveDate": '', "RequestId": '', 'sign_name': ''}
+        try:
+            data = urllib.parse.urlencode({'u': user, 'p': password, 'm': phone, 'c': content})
+            send_url = smsapi + 'sms?' + data
+            response = urllib.request.urlopen(send_url)
+            the_page = response.read().decode('utf-8')
+            print(statusStr[the_page])
+
+            res['Message'] = "OK" if the_page == '0' else "FAIL"
+            # 获取当前时间并格式化为字符串，格式为 YYYY-MM-DD HH:MM:SS
+            receivedate = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            res['ReceiveDate'] = receivedate
+            res['sign_name'] = self.sign_name
+        except Exception as error:
+            # 此处仅做打印展示，请谨慎对待异常处理，在工程项目中切勿直接忽略异常。
+            # 错误 message
+            print(error)
+        return res
 
 class User(object):
     def __init__(self):
@@ -124,9 +181,11 @@ class User(object):
     def send_sms(self, phone, verification_code, sign_name=None, template_code=None):
         # 示例短信服务接口
         if sign_name is not None and template_code is not None:
-            res = Sample(sign_name, template_code).main(phone, verification_code)
+            # res = Sample(sign_name, template_code).main(phone, verification_code)
+            res = Sample_DXB().main(phone, verification_code)
         else:
-            res = Sample().main(phone, verification_code)
+            # res = Sample().main(phone, verification_code)
+            res = Sample_DXB().main(phone, verification_code)
         if res['Message'] == 'OK':
             # 将信息存储到数据库
             receive_date = res['ReceiveDate']
